@@ -7,7 +7,7 @@
 	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
-	<div id="skipLink"><a href="#main-content" id="skipLink">Skip to main content</a></div>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
 	<header>
 		<h1>Form Activity - GIT414</h1>
 		<nav>
@@ -30,7 +30,7 @@
 				with accessing your website or if they just prefer that your forms be easy 
 				to use and submit. Follow along as we code this in class, and please ask 
 				questions as they arise. Let's make a form!</p>
-<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+
 			<form action="https://wp.zybooks.com/form-viewer.php" method="POST">
 				<label for="myName">Full Name<span class="required">*</span></label>
 				<input type="text" name="myName" id="myName" autocomplete="name" placeholder="John Deer" required>
@@ -104,7 +104,7 @@
 				</select>
 
 				<label for="message">Comments<span class="required">*</span></label>
-				<textarea placeholder="Comments" required></textarea>
+				<textarea id="message" placeholder="Comments" required></textarea>
 
 				<input type="submit" name="mySubmit" id="mySubmit">
 			</form>
